@@ -63,7 +63,8 @@ def evaluate_entity_salience(gold_path, sys_path):
 
     f_e, p_e, r_e, tp_e, gold_size_e, sys_size_e = entity_evaluator.get_f_measures()
     f_m, p_m, r_m, tp_m, gold_size_m, sys_size_m = mention_evaluator.get_f_measures()
-
+    
+    print("")
     print("Mention based F measures: Precision: %.4f, Recall: %.4f, F1: %.4f. "
           "True Positive: %d, #Gold: %d, #System:%d." % (p_m, r_m, f_m, tp_m, gold_size_m, sys_size_m))
     print("Entity based F measures: Precision: %.4f, Recall: %.4f, F1: %.4f. "
