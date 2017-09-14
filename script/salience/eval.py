@@ -19,8 +19,6 @@ class Evaluator:
         self.gold_size += len(gold_set)
         self.sys_size += len(sys_set)
 
-        print("TP: %d, #Gold: %d, #SYS: %d" % (self.tp, self.gold_size, self.sys_size))
-
     def get_f_measures(self):
         precision = 1.0 * self.tp / self.sys_size
         recall = 1.0 * self.tp / self.gold_size
